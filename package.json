@@ -3,10 +3,13 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run src/graph.ts"
+    "dev": "bun run src/graph.ts",
+    "start": "npx tsx --env-file=.env src/graph.ts",
+    "index-pdf": "npx tsx --env-file=.env index_data.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "tsx": "^4.21.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
